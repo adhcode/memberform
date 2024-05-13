@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Capriola", sans-serif;
+}
+body{
+    background-color: #F9B528;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Capriola", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+    
+        
+}
+
+.logo{
+    margin-top: 100px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    
+   
+}
+.popup-btn{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+    /* z-index: 100; */
+    padding: 20px 20px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #F9B528;
+    color: #FEF5DA;
+    
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #FEF5DA;
+    margin-top: 10px;
+}
+.a{
+  align-items: center;
+}
+
+.popup-btn p{
+    font-size: 40px;
+    margin-left: 50px;
+}
+.popup-template{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 15vh;
+    height: 85vh;
+    z-index: 100;
+    width: 98vw;
+    overflow: hidden;
+    margin-left: 1vw;
+    transform: translateY(1000px);
+    opacity: 0;
+    margin-right: 1vw;
+    background-color: #F9B528;
+    border-radius: 40px 40px 0px 0px;
+
+}
+.popup-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.popup-top h1{
+    
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.popup-top p{
+    font-size: 12px;
+   
+    font-weight: 300;
+}
+.popup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.form-row{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+input[ type="date"]{
+    font-size: 18px;
+    color: #951B1E;
+    margin-right: 30px;
+}
+
+input[ type="text"]{
+    font-size: 18px;
+    color: #951B1E;
+    margin-right: 30px;
+}
+
+input[ type="file"]{
+    font-size: 18px;
+    color: #951B1E;
+    
+}
+.form-row1{
+    margin-left: 5%;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+.form-row h1 {
+    font-size: 16px;
+    font-weight: 600;
+    
+    margin-left: 10px;
+    color: #951B1E;
+}
+.form-row input{
+    width: 70%;
+    height: 50px;
+    outline: none;
+    border-radius: 10px;
+    border: 0;
+    
+    margin-top: 10px;
+    padding-left: 20px;
+    background: #fff;
+    margin-left: 5px;
+    
+    
+}
+.form-row textarea{
+    width: 70%;
+    height: 80px;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    border: 0;
+    
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+    background: #fff;
+    margin-left: 5px;
+   
+}
+.submit-popup{
+    width: 300px;
+    margin-left: 5px;
+    padding: 14px 25px;
+    border: 0;
+    border-radius: 40px;
+    background-color: #951B1E;
+    color: #FEF5DA;
+    margin-top: 10px;
+    font-family: "Capriola", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+.popup-close{
+    position: absolute;
+    top: 10px;
+    right: 13%;
+    color: #951B1E;
+}
+.popup-close ion-icon{
+    filter: invert(.2);
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px){
+
+  .popup-btn{
+    font-size: 50px;
+  }
+
+  
+}
+
+
+.footer{
+    position: absolute;
+    top: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h1{
+    font-size: 20px;
+    color: #951B1E;
+    margin-bottom: 10px;
+}
+
+.footer p{
+    font-size: 15px;
+    
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    font-size: 25px;
+    margin-top: 10px;
+    color: #951B1E;
+
+}
+
+.uvise{
+    display: flex;
+    color: #FEF5DA;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.email{
+    color: #951B1E;
+    margin-bottom: 10px;
+}
+.uvise p{
+    color: #FEF5DA;
+}
+
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #951B1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: #951B1E;
+    cursor: pointer;
+}
+
+
